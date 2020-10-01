@@ -5,9 +5,10 @@
 // Write a function accepts an array of values and returns a new array of stringified values.
 //
 
-const convertToString = (arr) => {
-  // Insert missing solution please
-};
+function convertToString(arr){
+  return arr.map((arrStr)=>arrStr.toString())
+
+}
 
 // Part 2 - Test
 // --------------

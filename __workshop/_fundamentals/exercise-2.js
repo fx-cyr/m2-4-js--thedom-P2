@@ -8,10 +8,15 @@
 // e.g. redacted(["bacon", false, 42]) returns [ 'redacted', false, 42 ]
 //
 
-const redacted = (arr) => {
-  // Insert missing solution please
-};
-
+ 
+function convertToString(arr) {
+  return arr.map((arrStr) => { if (typeof arrStr === "string") {
+    return "redacted"
+  }
+  else {
+    return arrStr
+  }})
+}
 // Part 2 - Test
 // --------------
 // Test your function.
