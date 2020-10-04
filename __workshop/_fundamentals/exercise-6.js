@@ -12,6 +12,12 @@
 // JAVASCRIPT -> No
 
 function isPalindrome(theString) {
+  for (var i = 0; i < theString.length/2; i++) {
+    if (theString[i] !== theString[theString.length - 1 - i]) {
+        return false;
+    }
+  }
+  return true;
   // Your code here
 }
 

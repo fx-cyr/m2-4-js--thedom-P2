@@ -8,8 +8,18 @@
 // - If no arguments are passed, return `undefined`
 
 const addNumbers = (...nums) => {
-  // Insert missing solution please
-};
+  console.log(nums)
+
+  return nums.reduce((acc, cv,index) => {
+    if (typeof cv === "number") {
+      cv = cv * cv
+ console.log(acc," "+index)
+      return acc + cv;
+    } 
+    console.log(acc," "+index)
+    return acc
+  });
+}
 
 // Part 2 - Test
 // --------------

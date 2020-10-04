@@ -16,7 +16,7 @@
 
 function insert(arr, obj) {
   return arr.map((newObj) => {if (typeof obj === "object") {
-    return {...arr, ...obj} }
+    return {...arr, obj} }
 
 else {
 return newObj}
